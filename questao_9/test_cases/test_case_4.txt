@@ -1,0 +1,8 @@
+Test Case 4: Verify Invalid Triangle
+
+Setup                                   |                        Step                                  | Expected Result
+----------------------------------------+--------------------------------------------------------------+-------------------------------------------------------
+Access in browser the following site:   | Fill the V1, V2 and V3 inputs with three different positive  | An error message appears saying that a triangle with
+https://www.vanilton.net/triangulo      | number which one of them should be greater then the sum of   | these side measure is invalid
+                                        | the other two numbers (e.g 4, 5, 10)                         |
+----------------------------------------+--------------------------------------------------------------+-------------------------------------------------------

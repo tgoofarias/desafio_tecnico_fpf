@@ -1,0 +1,8 @@
+Test Case 3: Verify Scalene Triangle
+
+Setup                                   |                        Step                             | Expected Result
+----------------------------------------+---------------------------------------------------------+-------------------------------------------------------
+Access in browser the following site:   | Fill the V1, V2 and V3 inputs with the three            | The calculus result should be an scalene triangle
+https://www.vanilton.net/triangulo      | different positive number each that are lower than      |
+                                        | the sum of the other tow numbers (e.g 3, 4, 5)          |
+----------------------------------------+---------------------------------------------------------+-------------------------------------------------------

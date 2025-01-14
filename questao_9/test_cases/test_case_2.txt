@@ -1,0 +1,10 @@
+Test Case 2: Verify Isosceles Triangle
+
+Setup                                   |                        Step                             | Expected Result
+----------------------------------------+---------------------------------------------------------+-------------------------------------------------------
+Access in browser the following site:   | Fill the V1 and V2 inputs with the same                 | 
+https://www.vanilton.net/triangulo      | positive number                                         |
+----------------------------------------+---------------------------------------------------------+-------------------------------------------------------
+                                        | Fill the V3 input with a different positive number      | The calculus result should be an isosceles triangle
+                                        | that is lower than the sum of the other two sides       |
+----------------------------------------+---------------------------------------------------------+-------------------------------------------------------

@@ -1,0 +1,7 @@
+Test Case 1: Verify Equilateral Triangle
+
+Setup                                   |                        Step                             | Expected Result
+----------------------------------------+---------------------------------------------------------+-------------------------------------------------------
+Access in browser the following site:   | Fill the V1, V2 and V3 input sides with the same        | The calculus result should be an equilateral triangle
+https://www.vanilton.net/triangulo      | positive number                                         |
+----------------------------------------+---------------------------------------------------------+-------------------------------------------------------

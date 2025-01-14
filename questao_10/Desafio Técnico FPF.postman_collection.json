@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "464b1b82-f6e1-48c6-a708-e1b9f00e5dd7",
+		"name": "Desafio Técnico FPF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "40995957"
+	},
+	"item": [
+		{
+			"name": "Valid Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Mouse\",\r\n    \"preco\": \"3.00\",\r\n    \"quantidade\": 2,\r\n    \"categoria\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/produtos/"
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": null,\r\n    \"preco\": \"Mouse\",\r\n    \"quantidade\": \"FPF\",\r\n    \"categoria\": 11\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/produtos/"
+			},
+			"response": []
+		},
+		{
+			"name": "Product Found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/produtos/1/?format=json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"produtos",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product Not Found",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/produtos/50000000000000/?format=json",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"produtos",
+						"50000000000000",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "json"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid Format",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/produtos/1/?format=fpf",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"produtos",
+						"1",
+						""
+					],
+					"query": [
+						{
+							"key": "format",
+							"value": "fpf"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

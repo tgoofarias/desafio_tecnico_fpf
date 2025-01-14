@@ -1,0 +1,7 @@
+Test Case 4: Verify Impossible Triangle
+
+Setup                                   |                        Step                                  | Expected Result
+----------------------------------------+--------------------------------------------------------------+-------------------------------------------------------
+Access in browser the following site:   | Fill the V1, V2 and V3 inputs with three numbers equal or    | An error message appears saying that a triangle with
+https://www.vanilton.net/triangulo      | lower than zero                                              | these side measure are invalid
+----------------------------------------+--------------------------------------------------------------+-------------------------------------------------------
